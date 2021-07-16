@@ -1,0 +1,20 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+
+{% block title %}
+    Каталог
+{% endblock %}
+
+{% block content %}
+<h1>Каталог</h1>
+<div class="catalog">
+    <div class="block">
+        <a href="{% url 'products' %}"><img src="{% static 'img/0535934_1.jpg' %}" alt="Сервер" width="100"></a>
+        <a href="page1.html" class="caption">подробнее</a>
+    </div>
+    <div class="block">
+        <a href="page1.html"><img src="{% static 'img/0513732_2.jpg' %}" alt="intel i5" width="100"></a>
+        <a href="page1.html" class="caption">подробнее</a>
+    </div>
+</div>
+{% endblock %}
