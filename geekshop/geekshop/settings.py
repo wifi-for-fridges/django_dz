@@ -37,6 +37,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+<<<<<<< Updated upstream:geekshop/geekshop/settings.py
+=======
+    'mainapp',
+    'authapp'
+>>>>>>> Stashed changes:geekshop/geekshop/geekshop/settings.py
 ]
 
 MIDDLEWARE = [
@@ -119,7 +124,13 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+<<<<<<< Updated upstream:geekshop/geekshop/settings.py
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+=======
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'static/img/')
+AUTH_USER_MODEL = 'authapp.ShopUser'
+>>>>>>> Stashed changes:geekshop/geekshop/geekshop/settings.py
